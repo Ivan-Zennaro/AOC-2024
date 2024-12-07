@@ -40,6 +40,3 @@ for coordinates in visitedCoordinates:
         tot += 1
 
 print(tot)
-print("end")
-
-

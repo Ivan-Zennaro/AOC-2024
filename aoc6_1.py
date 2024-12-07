@@ -45,4 +45,3 @@ with open("input.txt", "r") as file:
 position = find_start_position(matrix)
 res = walk(Direction.UP, position[0], position[1], matrix)
 print(sum(row.count('X') for row in res))
-
