@@ -17,16 +17,11 @@ def convert_to_ternary(number, length):
 def precompute_combinations(num_values):
     total_combinations = 3 ** (num_values - 1)
     return [list(map(int, convert_to_ternary(i, num_values - 1))) for i in range(total_combinations)]
-
-def process_file(file_path):
-    tot = 0
-
     
 with open("input.txt", "r") as file:
     nLines = sum(1 for _ in file)
 
 res = 0
-# Read the file again and process each line
 with open("input.txt", "r") as file:
     counter = 0
     for line in file:
