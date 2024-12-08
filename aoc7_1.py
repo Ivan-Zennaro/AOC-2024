@@ -1,5 +1,3 @@
-matrix = []
-
 def compute(l, bin):
     tot = l[0]
     for i, b in enumerate(bin):
